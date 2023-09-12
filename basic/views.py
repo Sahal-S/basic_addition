@@ -8,7 +8,7 @@ def one(request):
 def two(request):
     n1=request.GET["num1"]
     n2=request.GET["num2"]
-    res=int(n1)+int(n2)
+    res=int(n1)*int(n2)
     
     return HttpResponse(res)
 
